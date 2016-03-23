@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>响应式页面</title>
+</head>
+<body>
+<div class="head">
+    <div class="name">Willi Corto</div>
+    <div class="botn"></div>
+    <div class="black"></div>
+<div class="right clearfix">
+    <div class="right-image"></div>
+    <h2 class="right-main">Willis Corto</h2>
+    <p class="right-text">I got reprogrammed by a rogue Al and now I'm totally cray</p>
+    <div class="right-bottom">
+        <ul class="right-bottom-list">
+            <li class="right-bottom-item active"><a href="#">About</a></li>
+            <li class="right-bottom-item"><a href="#">Things I Can Do</a></li>
+            <li class="right-bottom-item"><a href="#">A Few Accomplishments</a></li>
+            <li class="right-bottom-item"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="right-middon"></div>
+    <div class="right-footer"></div>
+</div>
+</div>
+<div class="main clearfix">
+    <div class="main-text-top clearfix">
+        <h1>Read Only</h1>
+        <h3>Just an incredibly simple responsive site template freebie by HTML5 UP</h3>
+        <p>Faucibus sed lobortis aliquam lorem blandit.Lorem eu nunc metus col.Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus.Adipiscing mi ac commodo.Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non.Adipiscing cubilia elementum.</p>
+    </div>
+    <div class="main-text-down">
+        <h2>Things I Can Do</h2>
+        <h5>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non.Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</h5>
+        <ul class="main-down-list">
+            <li class="item-list"><i></i><span>Write all the code</span></li>
+            <li class="item-list"><i></i><span>Stack small boxes</span></li>
+            <li class="item-list"><i></i><span>Read books and stuff</span></li>
+            <li class="item-list"><i></i><span>Drink much coffee</span></li>
+            <li class="item-list"><i></i><span>Lightning bolt</span></li>
+            <li class="item-list"><i></i><span>Shadow clone technique</span></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $(".right-bottom-list li").on("click",function(){
+            $(".active").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+</script>
+</body>
+</html>
